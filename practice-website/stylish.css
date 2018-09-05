@@ -1,0 +1,132 @@
+body {
+    font-family: helvetica, sans-serif, lucida;
+    background-color: #ccf9d1;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2c027f;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #393d72;
+    color: white;
+    border-bottom: green 3px solid;
+    min-height: 110px;
+}
+
+header h1 {
+    float: left;
+    font-weight: 900;
+}
+
+nav {
+    float: right;
+    margin-top: 50px;
+}
+
+header li {
+    display: inline;
+    font-size: 18px;
+    margin-left: 40px
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#showcase {
+    background:url(boba-2.jpg) no-repeat -270px -750px;
+    height: 900px;
+}
+
+#showcase .container div {
+    background: rgb(124, 127, 132, 0.7);
+}
+
+#showcase h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+footer pre {
+    color: #3f4042;
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer li {
+    display: inline;
+    font-size: 14px;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+#showcase .pic {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 30px;
+}
+
+
+header .highlight {
+    font-weight: bold;
+    color: #0da538;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: #a4aebf;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color: #383b3f;
+}
+
+#main {
+    text-align: left;
+}
+
+#sidebar {
+    margin-bottom: 40px;
+    margin-right: 20px;
+    width: 30%;
+    float: right;
+}
+
+.dark {
+    padding: 15px;
+    background:rgb(88, 91, 89, 0.6);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 770px) {
+    
+    header h1, nav, .pic{
+        color: red;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+header ul {
+    margin: 0px;
+    padding: 0px;
+}
