@@ -21,7 +21,6 @@ table a{
     color: black;
 }
 th{
-    color: white;
     font-weight: 300;
     font-size: 22px;
     font-family: "Trebuchet MS", Courier, sans-serif ;
@@ -36,6 +35,10 @@ table{
 }
 table .highlight {
     background-color: #8770b2;
+    font-weight: bold;
+}
+table .highlight a {
+    color: white;
 }
 
 /****** BODY ******/
@@ -49,6 +52,15 @@ body {
 #showcase {
     color: #b99bf2;
     padding: 10px;
+}
+#about-text {
+    color: white;
+    background: url(milkyway.JPG) no-repeat  0px -960px;
+    height: 1000px;
+}
+#about-text .container {
+    padding: 10px;
+    background: rgb(124, 127, 132, 0.7);
 }
 
 /****** SLIDES ******/
