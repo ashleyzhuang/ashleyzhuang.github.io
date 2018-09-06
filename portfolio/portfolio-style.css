@@ -149,6 +149,7 @@ footer a {
 }
 footer a:hover {
     color: #673599;
+    font-weight: bold;
 }
 footer li {
     display: inline;
@@ -159,4 +160,14 @@ footer {
     text-align: center;
     padding: 70px;
     color: gray;
+}
+
+@media(max-width: 770px) {
+    
+    header h1, nav, .pic{
+        color: red;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
 }
