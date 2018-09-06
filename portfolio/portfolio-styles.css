@@ -52,15 +52,20 @@ body {
 #showcase {
     color: #b99bf2;
     padding: 10px;
+    width: 60%;
+    margin: auto;
 }
 #about-text {
     color: white;
-    background: url(milkyway.JPG) no-repeat  0px -960px;
+    background: url(milkyway.JPG) no-repeat;
+    background-position: center;
     height: 1000px;
 }
 #about-text .container {
     padding: 10px;
     background: rgb(124, 127, 132, 0.7);
+    width: 60%;
+    margin: auto;
 }
 
 /****** SLIDES ******/
@@ -68,8 +73,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 750px;
+    width: 40%;
+    height: auto;
 }
 
 /* Next & previous buttons */
@@ -78,7 +83,7 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: 300px;
+  margin-top: 250px;
   color: #b99bf2;
   font-weight: bold;
   font-size: 20px;
@@ -90,11 +95,11 @@ img {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-  margin-right: 200px;
+  margin-right: 300px;
 }
 
 .prev {
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 /* On hover, make background gray and text white */
@@ -162,12 +167,21 @@ footer {
     color: gray;
 }
 
-@media(max-width: 770px) {
+@media(max-width: 1200px) {
     
-    header h1, nav, .pic{
-        color: red;
-        float: none;
-        text-align: center;
-        width: 100%;
+    img {
+        height: auto;
+    }
+    
+    .next, .prev {
+        margin-top: 20%;
+    }
+    
+    .next {
+        margin-right: 20%;
+    }
+    
+    .prev {
+        margin-left: 20%;
     }
 }
