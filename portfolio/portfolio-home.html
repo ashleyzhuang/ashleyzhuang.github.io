@@ -12,42 +12,132 @@
         <! Favicon >
         <link rel='shortcut icon' type='image/x-icon/' href='galaxy-transparent3.png'>
         
-        <title>Pretty Space Things</title>
+        <title>Cool Space Pics</title>
     </head>
     
     <body>
         <! Top Header Bar>
         <header>
-            <div class='container'>
-                
-                <! Header Title >
-                <div id='branding'>
-                    <h1><span class='highlight'>Cool </span>Space Pics</h1>
-                </div>
-                
-                <! Navigation Bar>
-                <nav>
-                    <ul>
-                        <li> <a href='portfolio-home.html' class='highlight'>Home</a></li>
-                        <li> <a href='aboutme.html'>About Me</a></li>
-                        <li> <a href='projects.html'>Projects</a></li>
-                    </ul>
-                </nav>
-                
+            <! Header Title >
+            <div id='branding'>
+                <h1><span class='highlight'>C</span>OOL <span class='highlight'>S</span>PACE <span class='highlight'>P</span>ICS! <span class='highlight'>(CSP)</span></h1>
+            </div>
+
             </div>
         </header>
         
+        <! Navigation Bar>
+        <table>
+          <tr>
+            <th class="highlight"><a href='portfolio-home.html' style="display:block">HOME</a></th>
+            <th><a href='aboutme.html' style="display:block">ABOUT ME</a></th> 
+            <th><a href='projects.html' style="display:block">PROJECTS</a></th>
+          </tr>
+        </table>
+        
+        <! Text>
         <section id='showcase'>
             <div class='container'>
-                <h1></h1>
+                <p>etscorn, c-14, qualityLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mi in purus imperdiet sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ac nunc magna. Quisque et eleifend magna, eu porta odio. Curabitur sagittis commodo nunc sed tempor. Quisque at ante euismod, finibus lorem in, blandit metus. Nunc vestibulum, lectus non porta bibendum, quam ipsum lacinia tortor, quis convallis libero ex lacinia magna. Donec sed elementum libero. Mauris ut felis imperdiet, efficitur purus eu, cursus diam. Mauris a augue sed libero malesuada dictum.</p>
             </div>
             
         </section>
         
+        <! Picture Slides>
+        <div id='slideshow'>
+            <div class='slides'>
+                <div class="mySlides">
+                    <img src="trifidnebula.JPG">
+                    <div class='caption'>Trifid Nebula</div>
+                </div>
+                <div class="mySlides">
+                    <img src="dumbbellnebula.JPG">
+                    <div class='caption'>Dumbbell Nebula</div>
+                </div>
+                <div class="mySlides">
+                    <img src="eaglenebula.JPG">
+                    <div class='caption'>Eagle Nebula</div>
+                </div>
+                <div class="mySlides">
+                    <img src="lagoonnebula.JPG">
+                    <div class='caption'>Lagoon Nebula</div>
+                </div>
+                <div class="mySlides">
+                    <img src="ringnebula.JPG">
+                    <div class='caption'>Ring Nebula</div>
+                </div>
+                <div class="mySlides">
+                    <img src="swannebula.JPG">
+                    <div class='caption'>Swan Nebula</div>
+                </div>
+                <div class="mySlides">
+                    <img src="NGC8911.jpg">
+                    <div class='caption'>NGC 8911</div>
+                </div>
+                <div class="mySlides">
+                    <img src="topofscorpio.JPG">
+                    <div class='caption'>Top of Scorpio</div>
+                </div>
+                <div class="mySlides">
+                    <img src="venussunset.JPG">
+                    <div class='caption'>Sunset ft. Venus</div>
+                </div>
+                
+                <! Next and Previous Buttons>
+                <a class="prev" onclick="plusSlides(-1)">&#10094; Prev</a>
+                <a class="next" onclick="plusSlides(1)">Next &#10095; </a>
+                
+            </div>
+            
+            <! Dots/bullets/indicators >
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                  <span class="dot" onclick="currentSlide(8)"></span>
+                  <span class="dot" onclick="currentSlide(9)"></span>
+                </div>
+            
+        </div>
+        
+        <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1} 
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none"; 
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                  slides[slideIndex-1].style.display = "block"; 
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+        
+        <! Footer>
         <footer>
         
             <div class='container'>
-                <pre>Boba Shop, Copyright &copy; 2018</pre>
+                <pre>Cool Space Pics, Copyright &copy; 2018</pre>
                 <ul>
                     <li>Written by Ashley Zhuang: <a href='mailto:ashley.zhu@lvjusd.org'> Email Me</a></li>
                     <li>Visit our school at: <a href='https://www.granadahigh.com/'>Granada High</a></li>

@@ -1,6 +1,150 @@
+/****** HEADER ******/
 header {
     background-color: #393d72;
     color: white;
-    border-bottom: green 3px solid;
     min-height: 110px;
+    font-family: "Trebuchet MS", Courier, sans-serif ;
+}
+header h1 {
+    float: left;
+    font-weight: 500;
+    margin-left:30px;
+}
+header .highlight {
+    font-weight: bold;
+    color: #b99bf2;
+}
+
+/****** NAVIGATION BAR ******/
+table a{
+    text-decoration: none;
+    color: black;
+}
+th{
+    color: white;
+    font-weight: 300;
+    font-size: 22px;
+    font-family: "Trebuchet MS", Courier, sans-serif ;
+}
+th:hover, .navmenu li a:hover{
+    background-color: #8770b2;
+}
+table{
+    width: 100%;
+    background-color: #b99bf2;
+    border-spacing: 0px;
+}
+table .highlight {
+    background-color: #8770b2;
+}
+
+/****** BODY ******/
+body {
+    font-family: "Trebuchet MS", Courier, sans-serif ;
+    background-color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2c027f;
+}
+#showcase {
+    color: #b99bf2;
+    padding: 10px;
+}
+
+/****** SLIDES ******/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 750px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 300px;
+  color: #b99bf2;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 200px;
+}
+
+.prev {
+    margin-left: 200px;
+}
+
+/* On hover, make background gray and text white */
+.prev:hover, .next:hover {
+  background-color: #2a292b;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  width: 59%;
+  padding: 10px;
+  text-align: center;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot */
+.active, .dot:hover {
+  background-color: #8770b2;
+}
+
+.caption {
+    text-align: center;
+    text-transform: uppercase;
+    color: #8770b2;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/****** FOOTER ******/
+footer pre {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #b99bf2;
+}
+footer a:hover {
+    color: #673599;
+}
+footer li {
+    display: inline;
+    font-size: 14px;
+    margin: 20px;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    color: gray;
 }

@@ -1,6 +1,12 @@
-header {
-    background-color: #393d72;
-    color: white;
-    border-bottom: green 3px solid;
-    min-height: 110px;
+header{
+    
+    background:#163c7c;
+    color:white;
+    font-family: 'Oswald';
+    font-weight: 200;
+}
+
+table a{
+    text-decoration: none;
+    color:white;
 }
