@@ -130,3 +130,7 @@ header ul {
     margin: 0px;
     padding: 0px;
 }
+
+#projects-text .container {
+    text-align: auto;
+}

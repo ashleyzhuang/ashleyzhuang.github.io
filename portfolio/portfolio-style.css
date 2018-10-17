@@ -185,3 +185,17 @@ footer {
         margin-left: 20%;
     }
 }
+
+#projects-text {
+    color: white;
+    background: url(milkyway.JPG) no-repeat;
+    background-position: center;
+    height: 1300px;
+}
+
+#projects-text .container {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    
+}
